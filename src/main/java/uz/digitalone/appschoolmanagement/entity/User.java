@@ -12,6 +12,10 @@ import javax.persistence.*;
  * Time: 7:24 PM
  */
 
+/**
+ *  User Class i - Entity (Domain Object)
+ */
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
