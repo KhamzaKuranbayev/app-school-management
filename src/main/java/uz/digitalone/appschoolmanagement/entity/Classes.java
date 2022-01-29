@@ -36,10 +36,17 @@ public class Classes {
     private User teacher;
 
     /**
-     *  One Classes To Many Students
+     * One Classes To Many Students
      */
     @OneToMany
     private List<User> students;
+
+    public Classes(String name, Integer maxStudent, Subject subject, User teacher) {
+        this.name = name;
+        this.maxStudent = maxStudent;
+        this.subject = subject;
+        this.teacher = teacher;
+    }
 
     /*
 
