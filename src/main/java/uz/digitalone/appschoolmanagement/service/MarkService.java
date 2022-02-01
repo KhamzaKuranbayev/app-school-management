@@ -19,5 +19,5 @@ public interface MarkService {
 
     Mark edit(Long id, MarkDto dto) throws ClassNotFoundException;
 
-    void remove(Long id) throws ClassNotFoundException;
+    Mark remove(Long id) throws ClassNotFoundException;
 }
