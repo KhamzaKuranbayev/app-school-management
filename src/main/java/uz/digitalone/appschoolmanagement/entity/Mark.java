@@ -30,11 +30,17 @@ public class Mark {
     private LocalDateTime givenDateTime;            // 2022-27-1 11:00:00
 
     @ManyToOne
+    @JoinColumn(name = "student_id")
     private User student;
 
     @ManyToOne
     @JoinColumn(name = "class_id")
     private Classes classes;
 
-
+    public Mark(Integer score, LocalDateTime givenDateTime, User student, Classes classes) {
+        this.score = score;
+        this.givenDateTime = givenDateTime;
+        this.student = student;
+        this.classes = classes;
+    }
 }
